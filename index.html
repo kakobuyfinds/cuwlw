@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>DgoBuy spreadsheet | Categorias, tamanhos e fotos QC</title>
+  <meta name="description" content="Use o DgoBuy spreadsheet para explorar calçado, roupa e acessórios. Saiba comparar anúncios, confirmar medidas e verificar fotos QC antes do envio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DgoBuy spreadsheet | Categorias, tamanhos e fotos QC">
+  <meta property="og:description" content="Guia em português para encontrar categorias, comparar variantes e calcular o custo total antes de encomendar.">
+  <style>
+    :root{color-scheme:light;--papel:#f6f0e6;--tinta:#211b27;--vinho:#481d3d;--lima:#e1f49a;--linha:#d4c7c7}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--papel);color:var(--tinta);font:1rem/1.6 system-ui,sans-serif}
+    a{color:var(--vinho);text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #006f64;outline-offset:4px}
+    .wrap{width:min(1120px,calc(100% - 2rem));margin-inline:auto}
+    .mast{border-bottom:1px solid var(--linha);padding:1rem 0}
+    .mast a{font-weight:800;overflow-wrap:anywhere}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:1.5rem;align-items:center;margin-block:1.5rem;background:var(--vinho);color:white;border-radius:1.25rem;padding:clamp(1.25rem,4vw,3rem)}
+    h1,h2,h3{line-height:1.13;margin:0 0 .65em}
+    h1{font-size:clamp(2.35rem,6.5vw,5.2rem);letter-spacing:-.06em}
+    h2{font-size:clamp(1.55rem,3.4vw,2.4rem);letter-spacing:-.035em}
+    h3{font-size:1.2rem}
+    p{margin:0 0 1rem}
+    .hero p{max-width:45ch}
+    .button{display:inline-block;background:var(--lima);color:var(--tinta);border-radius:.55rem;padding:.65rem 1rem;font-weight:750}
+    figure{margin:0}
+    img{display:block;width:100%;height:auto;background:#fff}
+    .hero img{aspect-ratio:4/3;object-fit:contain;border-radius:.85rem}
+    figcaption{font-size:.87rem;padding:.6rem 0 0}
+    section{margin-block:2.4rem}
+    .categories,.gallery{list-style:none;margin:0;padding:0;display:grid;gap:.65rem}
+    .categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))}
+    .categories a{display:block;border:1px solid var(--linha);padding:.65rem .8rem;border-radius:.55rem;background:#fff;font-weight:650}
+    .categories a:hover{background:var(--lima)}
+    .gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery img{aspect-ratio:1;object-fit:contain;border-radius:.75rem}
+    .articles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+    article{background:#fff;border:1px solid var(--linha);border-radius:.75rem;padding:1rem}
+    article p:last-child,details p:last-child{margin-bottom:0}
+    details{border-top:1px solid var(--linha);padding:.7rem 0}
+    summary{cursor:pointer;font-weight:750;padding:.2rem 0}
+    details p{margin-top:.55rem}
+    footer{border-top:1px solid var(--linha);padding:1rem 0 1.8rem}
+    @media(max-width:720px){.hero,.articles{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"DgoBuy spreadsheet | Categorias, tamanhos e fotos QC",
+        "description":"Use o DgoBuy spreadsheet para explorar calçado, roupa e acessórios. Saiba comparar anúncios, confirmar medidas e verificar fotos QC antes do envio.",
+        "inLanguage":"pt"
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"pt",
+        "mainEntity":[
+          {"@type":"Question","name":"O que é um DgoBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"É um índice que organiza referências e links de produtos por categoria. Confirme a disponibilidade e a variante no anúncio atual."}},
+          {"@type":"Question","name":"O que fazer se um link deixar de funcionar?","acceptedAnswer":{"@type":"Answer","text":"Abra a categoria correspondente e procure pelo tipo de peça, material e cor. Compare a ficha e as medidas de cada alternativa."}},
+          {"@type":"Question","name":"As fotos QC confirmam a autenticidade?","acceptedAnswer":{"@type":"Answer","text":"As fotos QC permitem verificar aspetos visíveis, como etiquetas e acabamento. Para confirmar a autenticidade, verifique a proveniência e procure um serviço de autenticação qualificado."}},
+          {"@type":"Question","name":"Como estimar o custo total da encomenda?","acceptedAnswer":{"@type":"Answer","text":"Some o preço do artigo, o envio local, os custos do serviço e do pagamento, o frete internacional e os impostos aplicáveis. Use a mesma moeda para comparar opções."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- Pesquisa editorial: não foi possível confirmar a ordem da primeira página do Bing.
+       Referências consultadas nos resultados disponíveis: dgo-buy.com/what-is-dgobuy-spreadsheet/,
+       dgosheets.com, qcradar.com/dgobuy-spreadsheet, dgo-buy.com,
+       usfanskakobuy.net/dgobuy-spreadsheet, yupoo.tips/dgobuy-spreadsheet,
+       tiktokspreadsheet.net/dgobuy-spreadsheet, cnfanssheet.com/dgobuy-spreadsheet,
+       cnfans.tips/dgobuy-spreadsheet e bbd-buy.org/dgobuy-spreadsheet.
+       Temas recorrentes: categorias, links de produtos, variantes, fotos QC, custos e envio. -->
+<link rel="canonical" href="https://kakobuyfinds.github.io/cuwlw/">
+</head>
+<body>
+  <header class="mast"><div class="wrap"><a href="https://www.hipobuyfind.com">www.hipobuyfind.com</a></div></header>
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>DgoBuy spreadsheet</h1>
+        <p>Comece pela categoria certa, guarde os anúncios que valem a pena comparar e confirme medidas, fotografias e custos antes de encomendar.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Explorar o catálogo</a>
+      </div>
+      <figure>
+        <img src="https://www.ego-sport.pl/hpeciai/a63432ceca39f4d6581781f14515d795/pol_pl_Nike-buty-meskie-Air-Force-1-07-CW2288-111-biale-14786_1.webp" width="640" height="480" loading="eager" fetchpriority="high" alt="Sapatilha Nike Air Force 1 ’07 branca vista de lado">
+        <figcaption>Nike Air Force 1 ’07 · referência visual para calçado</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="categorias">
+      <h2 id="categorias">Escolher uma categoria</h2>
+      <nav aria-label="Categorias de produtos">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calçado</a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Camisolas e moletons</a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Casacos</a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Calças e calções</a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Bonés e chapéus</a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos</a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Roupa interior</a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisolas desportivas</a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Acessórios</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="referencias">
+      <h2 id="referencias">Detalhes para observar</h2>
+      <p>Use estas referências visuais para identificar os ângulos e os detalhes que vale a pena pedir ao vendedor.</p>
+      <ul class="gallery">
+        <li><figure><img src="https://assets.christiandior.com/is/image/diorprod/013D482J374XC580_E12?wid=480&amp;hei=480&amp;fit=fit,1&amp;qlt=78" width="480" height="480" loading="lazy" decoding="async" alt="Casaco Dior Oblique em ganga azul-escura"><figcaption>Dior · bolsos, costuras e punhos</figcaption></figure></li>
+        <li><figure><img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Boné Gucci em lona bege com monograma GG"><figcaption>Gucci · tecido e formato da pala</figcaption></figure></li>
+        <li><figure><img src="https://en.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm--M46987_PM1_Worn%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Modelo com um casaco claro a segurar uma mala Louis Vuitton Neverfull MM com monograma"><figcaption>Louis Vuitton · proporção e comprimento das alças</figcaption></figure></li>
+        <li><figure><img src="https://kream-phinf.pstatic.net/MjAyNTA3MzFfNzAg/MDAxNzUzODk4MTE1MjI3.WHGujKqNd9mT7aHEnAwoupW_atTkD6iQczFjUwc4HVMg.QIMaa4Wt7_-kLRs4KpRV-NQhSMFSfTE8Ggprf8CyWYwg.PNG/a_2fba6b33de3f40fc847572fc7a5614b4.png?type=w480" width="480" height="480" loading="lazy" decoding="async" alt="Pulseira Hermès Clic H de esmalte laranja com fecho dourado"><figcaption>Hermès · acabamento e fecho</figcaption></figure></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="guias">
+      <h2 id="guias">Guias para comparar antes de encomendar</h2>
+      <div class="articles">
+        <article>
+          <h3>Links de produtos e guia de tamanhos</h3>
+          <p>Ao guardar links de produtos, anote o nome do vendedor, a cor selecionada, o código do modelo e a data da consulta. Se estiver a comparar anúncios de Taobao ou Weidian, confirme se as fotografias correspondem à variante disponível.</p>
+          <p>Para sapatilhas, compare o comprimento do pé com a tabela do vendedor e peça a medida da palmilha. Para roupa, meça uma peça que já lhe sirva. Compare a largura do peito, a altura da cintura e o comprimento da manga em centímetros.</p>
+        </article>
+        <article>
+          <h3>Como verificar fotos QC</h3>
+          <p>No controlo de qualidade, peça fotografias do artigo recebido com luz uniforme. Confira a etiqueta de tamanho, a simetria das costuras e o estado da sola. Em casacos, peça uma imagem do fecho aberto. Em acessórios, peça uma foto de perto da fivela ou do fecho.</p>
+          <p>Se houver diferença entre a cor encomendada e a cor recebida, guarde o registo da variante e confirme o prazo para pedir troca ou devolução antes de autorizar o envio.</p>
+        </article>
+        <article>
+          <h3>Custo total e envio internacional</h3>
+          <p>Ao comparar duas opções, anote o preço do artigo, o envio local, a taxa de câmbio e os encargos do pagamento. Para estimar o frete internacional, peça o peso real e as dimensões da caixa, pois o transportador pode cobrar pelo peso volumétrico.</p>
+          <p>Para entregas em Portugal ou no Brasil, confirme os impostos de importação, os encargos do transportador e a cobertura do rastreio para o destino antes de pagar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Perguntas frequentes</h2>
+      <details><summary>O que é um DgoBuy spreadsheet?</summary><p>É um índice que organiza referências e links de produtos por categoria. Confirme a disponibilidade e a variante no anúncio atual.</p></details>
+      <details><summary>O que fazer se um link deixar de funcionar?</summary><p>Abra a categoria correspondente e procure pelo tipo de peça, material e cor. Compare a ficha e as medidas de cada alternativa.</p></details>
+      <details><summary>As fotos QC confirmam a autenticidade?</summary><p>As fotos QC permitem verificar aspetos visíveis, como etiquetas e acabamento. Para confirmar a autenticidade, verifique a proveniência e procure um serviço de autenticação qualificado.</p></details>
+      <details><summary>Como estimar o custo total da encomenda?</summary><p>Some o preço do artigo, o envio local, os custos do serviço e do pagamento, o frete internacional e os impostos aplicáveis. Use a mesma moeda para comparar opções.</p></details>
+    </section>
+  </main>
+  <footer><div class="wrap">Guia editorial independente · <a href="https://www.hipobuyfind.com">Hipobuyfind</a></div></footer>
+</body>
+</html>
